@@ -19,7 +19,7 @@ GameManager::GameManager(Board* bPtr, Player* playerPtr[2] ) {
 void GameManager::run() {
     int x, y;
 
-    boardPtr->display_board();
+    boardPtr->display_board();//show the board
 
     while (!boardPtr->game_is_over()) {
         for (int i:{0,1}) {
